@@ -14,8 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('masyarakat', function (Blueprint $table) {
-            $table->id();
-            $table->string('nik', 16);
+            $table->integer('nik')->autoIncrement();
             $table->string('nama', 35);
             $table->string('username', 25);
             $table->string('password', 32);

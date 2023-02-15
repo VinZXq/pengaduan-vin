@@ -14,12 +14,13 @@ return new class extends Migration
     public function up()
     {
         Schema::create('tanggapan', function (Blueprint $table) {
-            $table->id();
-            $table->integer('id_tanggapan');
+            $table->integer('id')->autoIncrement();
             $table->integer('id_pengaduan');
             $table->date('tgl_tanggapan');
             $table->text('tanggapan');
             $table->integer('id_petugas');
+            $table->foreign('id_pengaduan')->references('id')->on('pengaduan');
+            $table->foreign('id_petugas')->references('id')->on('petugas');
             $table->timestamps();
         });
     }
