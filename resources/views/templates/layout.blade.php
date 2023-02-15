@@ -5,27 +5,30 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Pengaduan</title>
+  <title>Purple Admin</title>
   <!-- plugins:css -->
-  <link rel="stylesheet" href="../../node_modules/mdi/css/materialdesignicons.min.css">
-  <link rel="stylesheet" href="../../node_modules/perfect-scrollbar/dist/css/perfect-scrollbar.min.css">
+  <link rel="stylesheet" href="node_modules/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="node_modules/perfect-scrollbar/dist/css/perfect-scrollbar.min.css">
   <!-- endinject -->
   <!-- plugin css for this page -->
+  <link rel="stylesheet" href="node_modules/jquery-bar-rating/dist/themes/css-stars.css">
+  <link rel="stylesheet" href="node_modules/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css" />
   <!-- End plugin css for this page -->
   <!-- inject:css -->
-  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="css/style.css">
   <!-- endinject -->
   <link rel="shortcut icon" href="images/favicon.png" />
 </head>
 <body>
   <div class="container-scroller">
-    <!-- partial:../../partials/_navbar.html -->
+    <!-- partial:partials/_navbar.html -->
     <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
       <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-        <a class="navbar-brand brand-logo" href="../../index.html"><img src="images/logo.svg" alt="logo"/></a>
-        <a class="navbar-brand brand-logo-mini" href="../../index.html"><img src="images/logo-mini.svg" alt="logo"/></a>
+        <a class="navbar-brand brand-logo" href="index.html"><img src="images/logo.svg" alt="logo"/></a>
+        <a class="navbar-brand brand-logo-mini" href="index.html"><img src="images/logo-mini.svg" alt="logo"/></a>
       </div>
       <div class="navbar-menu-wrapper d-flex align-items-stretch">
+
         <ul class="navbar-nav navbar-nav-right">
           <li class="nav-item d-none d-lg-block full-screen-link">
             <a class="nav-link">
@@ -42,7 +45,7 @@
               <div class="dropdown-divider"></div>
               <a class="dropdown-item preview-item">
                 <div class="preview-thumbnail">
-                    <img src="../../images/faces/face4.jpg" alt="image" class="profile-pic">
+                    <img src="images/faces/face4.jpg" alt="image" class="profile-pic">
                 </div>
                 <div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
                   <h6 class="preview-subject ellipsis mb-1 font-weight-normal">Mark send you a message</h6>
@@ -54,7 +57,7 @@
               <div class="dropdown-divider"></div>
               <a class="dropdown-item preview-item">
                 <div class="preview-thumbnail">
-                    <img src="../../images/faces/face2.jpg" alt="image" class="profile-pic">
+                    <img src="images/faces/face2.jpg" alt="image" class="profile-pic">
                 </div>
                 <div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
                   <h6 class="preview-subject ellipsis mb-1 font-weight-normal">Cregh send you a message</h6>
@@ -66,7 +69,7 @@
               <div class="dropdown-divider"></div>
               <a class="dropdown-item preview-item">
                 <div class="preview-thumbnail">
-                    <img src="../../images/faces/face3.jpg" alt="image" class="profile-pic">
+                    <img src="images/faces/face3.jpg" alt="image" class="profile-pic">
                 </div>
                 <div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
                   <h6 class="preview-subject ellipsis mb-1 font-weight-normal">Profile picture updated</h6>
@@ -134,8 +137,8 @@
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle nav-profile" id="profileDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
-              <img src="../../images/faces/face1.jpg" alt="image">
-              <span class="d-none d-lg-inline">Arvn Kurniawan</span>
+              <img src="images/faces/face1.jpg" alt="image">
+              <span class="d-none d-lg-inline">Arvin Kurniawan</span>
             </a>
             <div class="dropdown-menu navbar-dropdown w-100" aria-labelledby="profileDropdown">
               <a class="dropdown-item" href="#">
@@ -161,7 +164,7 @@
       </div>
     </nav>
     <!-- partial -->
-    <<div class="container-fluid page-body-wrapper">
+    <div class="container-fluid page-body-wrapper">
       <div class="row row-offcanvas row-offcanvas-right">
         <!-- partial:partials/_sidebar.html -->
         <nav class="sidebar sidebar-offcanvas" id="sidebar">
@@ -230,16 +233,7 @@
         </nav>
         <!-- partial -->
         <div class="content-wrapper">
-          <div class="row purchace-popup">
-            <div class="col-12">
-              <span class="d-flex alifn-items-center">
-                <p>Like what you see? Check out our premium version for more.</p>
-                <a href="https://github.com/BootstrapDash/PurpleAdmin-Free-Admin-Template" target="_blank" class="btn ml-auto download-button">Download Free Version</a>
-                <a href="https://www.bootstrapdash.com/product/purple-bootstrap-4-admin-template/" target="_blank" class="btn purchase-button">Upgrade To Pro</a>
-                <i class="mdi mdi-close popup-dismiss"></i>
-              </span>
-            </div>
-          </div>
+          
           <div class="row">
             <div class="col-md-4 stretch-card grid-margin">
               <div class="card bg-gradient-warning text-white">
@@ -648,29 +642,25 @@
       </div>
       <!-- row-offcanvas ends -->
     </div>
-        <!-- content-wrapper ends -->
-        <!-- partial:../../partials/_footer.html -->
-        <!-- partial -->
-      </div>
-      <!-- row-offcanvas ends -->
-    </div>
     <!-- page-body-wrapper ends -->
   </div>
   <!-- container-scroller -->
 
   <!-- plugins:js -->
-  <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
-  <script src="../../node_modules/popper.js/dist/umd/popper.min.js"></script>
-  <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script src="../../node_modules/perfect-scrollbar/dist/js/perfect-scrollbar.jquery.min.js"></script>
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="node_modules/perfect-scrollbar/dist/js/perfect-scrollbar.jquery.min.js"></script>
   <!-- endinject -->
   <!-- Plugin js for this page-->
+  <script src="node_modules/chart.js/dist/Chart.min.js"></script>
   <!-- End plugin js for this page-->
   <!-- inject:js -->
-  <script src="../../js/off-canvas.js"></script>
-  <script src="../../js/misc.js"></script>
+  <script src="js/off-canvas.js"></script>
+  <script src="js/misc.js"></script>
   <!-- endinject -->
   <!-- Custom js for this page-->
+  <script src="js/dashboard.js"></script>
   <!-- End custom js for this page-->
 </body>
 
